@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js" defer ></script>
+</head>
+<body>
+  <form id="myForm" class="container-white">
+    <div class="title is-100">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="field-group is-50">
+      <label>First Name </label>
+      <input type="text" id="firstName" placeholder=""/>
+      <p class="alert" id="Error">this field is required</p>
+    </div>
+    <div class="field-group is-50">
+      <label> Last Name  </label>
+      <input type="text" id="lastName" placeholder=""/>
+      <p class="alert" id="ErrorLastName">this field is required</p>
+    </div>
+    <div class="field-group is-100">
+      <label> Email Address </label>
+      <input type="text" id="emailAddress" placeholder="" />
+      <p class="alert" id="notValid">Please enter a valid email address</p>
+      <p class="alert" id="emailError">this field is required</p>
+    </div>
+    <div class="field-group query-type is-100">
+        <label> Query Type</label>
+        <div class="general is-50">
+          <label for="generalType" class="checklab"> <input class="check" type="radio" name="query-type" id="generalType" placeholder="" /> General Enquiry</label> 
+        </div>
+        <div class="support is-50">
+          <label for="supportType" class="checklab"><input class="check" type="radio" name="query-type" id="supportType" placeholder="" /> Support Request</label>
+        </div>
+        <p class="alert" id="errorQuery"> Please select a query type </p>
+    </div>
+    <div class="field-group message is-100">
+      <label> Message </label>
+      <textarea name="message" rows="4" id="message"></textarea>
+      <p class="alert" id="ErrorMsg"> this field is required </p>
+    </div>
+    <div class="checkbox is-100">
+      <label class="agreelab"> <input class="agreein" type="checkbox" id="agreement" placeholder="" /> I consent to being contacted by the team</label>
+      <p class="alert" id="errorCheck">To submit this form, please consent to being contacted </p>
+    </div>
+    <div class="field-group agreement is-100"">
+      <button class="send" type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
